@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  calculator:
+    build: .
+    # image: calculator_app
+    volumes:
+      - .:/usr/src/app
+    command: python -m pytest
